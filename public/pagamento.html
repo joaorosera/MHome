@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title> 
+    <link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/style-pagamento.css">
+   </head>
+<body>
+  <header>
+    <!--Barra de navegação-->
+    <div class="navbar">
+        <div class="logoimagem"> 
+          <img src="https://i.pinimg.com/originals/8b/5c/e9/8b5ce93cf536a710ccec51ef0bdf46e9.png" alt="Logo MHome" width="25%" height="25%">
+        </div>
+        <!--Links da barra de navegação-->
+        <ul class="links">
+            <li><a class="links1" a href="index.html">Início</a></li>
+            <li><a class="links1" a href="produtos.html">Produtos</a></li>
+            <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+            <li><a class="links1" a href="contato.html">Contato</a></li>
+        </ul>
+
+        <details class="dropdown">
+          <summary role="button">
+            <a class="button">☰</a>
+          </summary>
+          <ul>
+            <li><a href="minhaconta.html">Minha conta</a></li>
+            <li><a href="meuspedidos.html">Pedidos</a></li>
+            <li><a href="sacola.html">Sacola</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+      </details>
+      
+        <!-- <a href="cadastro.html" class="action_btn">Começar</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i> -->
+        </div>
+    </div>
+    <!--Links menu suspenso-->
+    <div class="dropdown_menu">
+        <li><a href="hero">Início</a></li>
+            <li><a href="products">Produtos</a></li>
+            <li><a href="about">Sobre</a></li>
+            <li><a href="contact">Contato</a></li>
+            <li><a href="#" class="action_btn">Começar</a></li>
+    </div>
+    
+</header>
+
+
+<!-- titulo "Pagamento" -->
+    <!-- <div class="titulo">PAGAMENTO</div> -->
+
+
+<!-- box com as caixas de texto e as parcelas -->    
+    <div class="box">
+      <br>
+      <div class ="dados">Dados do cartão</div>
+
+      
+
+
+
+      <form class="form" action="/login" method="post">
+        <div class="input-caixanumero">
+          <label for="username">Número do cartão</label>
+          <input type="text" name="username" id="username" maxlength="16" placeholder="**** **** **** ****">
+        </div>
+
+        <div class="input-caixanome">
+          <label for="username">Nome no cartão</label>
+          <input type="text" name="username" id="username" placeholder="Apenas letras">
+        </div>
+
+        <div class="input-caixanome">
+          <label for="username">Validade</label>
+          <input type="text" name="username" id="username" maxlength="5" placeholder="**/**">
+        </div>
+
+        <div class="input-caixanome">
+          <label for="username">Código CVC</label>
+          <input type="text" name="username" id="username" maxlength="3" placeholder="***">
+        </div>
+     
+          <div class ="textoparcelas">Parcelamento
+          <select class="parcelas">
+            <option value="1x" selected="selected" >1x s/ juros</option>
+            <option value="2x" >2x s/ juros</option>
+            <option value="3x" >3x s/ juros</option>
+            <option value="4x" >4x s/ juros</option>
+            <option value="5x" >5x s/ juros</option>
+            <option value="6x" >6x s/ juros</option>
+            <option value="7x" >7x s/ juros</option>
+            <option value="8x" >8x s/ juros</option>
+            <option value="9x" >9x s/ juros</option>
+            <option value="10x">10x s/ juros</option>
+            <option value="11x">11x s/ juros</option>
+            <option value="12x">12x s/ juros</option>
+            <option value="13x">13x s/ juros</option>
+        </select>
+      </div>
+
+
+<!-- Botão finalizar reserva --> 
+   
+<a href="meuspedidos.html" class="buttonfinalizar">Reservar agora </a>
+
+
+    </div>
+  
+</body>
+</html>

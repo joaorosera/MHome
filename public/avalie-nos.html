@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Avalie-nos</title>
+<link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+<link rel="stylesheet" href="../assets/style-avalienos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegação-->
+        <div class="navbar">
+            <div class="logoimagem"> 
+              <img src="https://i.pinimg.com/originals/8b/5c/e9/8b5ce93cf536a710ccec51ef0bdf46e9.png" alt="Logo MHome" width="25%" height="25%">
+            </div>
+            <!--Links da barra de navegação-->
+            <ul class="links">
+                <li><a class="links1" a href="index.html">Início</a></li>
+                <li><a class="links1" a href="produtos.html">Produtos</a></li>
+                <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+                <li><a class="links1" a href="contato.html">Contato</a></li>
+            </ul>
+    
+            <details class="dropdown">
+              <summary role="button">
+                <a class="button">☰</a>
+              </summary>
+              <ul>
+                <li><a href="minhaconta.html">Minha conta</a></li>
+                <li><a href="meuspedidos.html">Pedidos</a></li>
+                <li><a href="sacola.html">Sacola</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+          </details>
+          
+            <!-- <a href="cadastro.html" class="action_btn">Começar</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i> -->
+            </div>
+        </div>
+        <!--Links menu suspenso-->
+        <div class="dropdown_menu">
+            <li><a href="hero">Início</a></li>
+                <li><a href="products">Produtos</a></li>
+                <li><a href="about">Sobre</a></li>
+                <li><a href="contact">Contato</a></li>
+                <li><a href="#" class="action_btn">Começar</a></li>
+        </div>
+        
+    </header>
+
+
+
+
+<!--Formulario de avaliação dos produtos-->
+<div class="container">
+    <p class="titulo">Qual seu nivel de satisfação com nosso produto?</p>
+
+<div class="post">
+<div class="text">Obrigado por avaliar!</div>
+<div class="edit">EDITAR</div>
+</div>
+<div class="star-widget">
+<input type="radio" name="rate" id="rate-5">
+<label for="rate-5" class="fas fa-star"></label>
+<input type="radio" name="rate" id="rate-4">
+<label for="rate-4" class="fas fa-star"></label>
+<input type="radio" name="rate" id="rate-3">
+<label for="rate-3" class="fas fa-star"></label>
+<input type="radio" name="rate" id="rate-2">
+<label for="rate-2" class="fas fa-star"></label>
+<input type="radio" name="rate" id="rate-1">
+<label for="rate-1" class="fas fa-star"></label>
+<form action="#">
+<header></header>
+<div class="textarea">
+<textarea cols="30" placeholder="Descreva sua experiência..."></textarea>
+</div>
+<div class="btn">
+<button type="submit">Enviar</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+const btn = document.querySelector("button");
+const post = document.querySelector(".post");
+const widget = document.querySelector(".star-widget");
+const editBtn = document.querySelector(".edit");
+btn.onclick = ()=>{
+widget.style.display = "none";
+post.style.display = "block";
+editBtn.onclick = ()=>{
+widget.style.display = "block";
+post.style.display = "none";
+}
+return false;
+}
+</script>
+</body>
+</html>

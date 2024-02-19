@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../assets/style-inicial.css">
+    <title>Início</title>
+</head>
+<body>
+    <header>
+        <!--Barra de navegação-->
+        <div class="navbar">
+            <div class="logoimagem"> 
+              <img src="https://i.pinimg.com/originals/f6/9d/c7/f69dc7a9bc2eb6079d14a72d9ae241a1.png" alt="Logo MHome" width="25%" height="25%">
+            </div>
+            <!--Links da barra de navegação-->
+            <ul class="links">
+                <li><a class="links1" a href="index.html">Início</a></li>
+                <li><a class="links1" a href="produtos.html">Produtos</a></li>
+                <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+                <li><a class="links1" a href="contato.html">Contato</a></li>
+            </ul>
+
+          
+            <a href="cadastro.html" class="action_btn">Começar</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!--Links menu suspenso-->
+        <div class="dropdown_menu">
+            <li><a href="hero">Início</a></li>
+                <li><a href="products">Produtos</a></li>
+                <li><a href="about">Sobre</a></li>
+                <li><a href="contact">Contato</a></li>
+                <li><a href="#" class="action_btn">Começar</a></li>
+        
+        
+        <!-- <details class="dropdown">
+            <summary role="button">
+              <a class="button">☰</a>
+            </summary>
+            <ul>
+              <li><a href="minhaconta.html">Minha conta</a></li>
+              <li><a href="meuspedidos.html">Pedidos</a></li>
+              <li><a href="sacola.html">Sacola</a></li>
+              <li><a href="index.html">Sair</a></li>
+          </ul>
+        </details> -->
+    </div>
+
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1><br><br><br>Bem-Vindo ao MHome</h1>
+            <p>Seu conforto sobre rodas!</p>
+        </section>
+    </main>
+
+    <script>
+        const toggle_btn = document.querySelector('.toggle_btn')
+        const toggle_btnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggle_btn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggle_btnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

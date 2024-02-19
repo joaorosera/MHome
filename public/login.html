@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+   </head>
+   <header>
+    <!--Barra de navegação-->
+    <div class="navbar">
+        <div class="logoimagem"> 
+          <img src="https://i.pinimg.com/originals/8b/5c/e9/8b5ce93cf536a710ccec51ef0bdf46e9.png" alt="Logo MHome" width="25%" height="25%">
+        </div>
+        <!--Links da barra de navegação-->
+        <ul class="links">
+            <li><a class="links1" a href="index.html">Início</a></li>
+            <li><a class="links1" a href="produtos.html">Produtos</a></li>
+            <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+            <li><a class="links1" a href="contato.html">Contato</a></li>
+        </ul>
+
+        <details class="dropdown">
+          <summary role="button">
+            <a class="button">☰</a>
+          </summary>
+          <ul>
+            <li><a href="minhaconta.html">Minha conta</a></li>
+            <li><a href="meuspedidos.html">Pedidos</a></li>
+            <li><a href="sacola.html">Sacola</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+      </details>
+      
+        <!-- <a href="cadastro.html" class="action_btn">Começar</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i> -->
+        </div>
+    </div>
+    <!--Links menu suspenso-->
+    <div class="dropdown_menu">
+        <li><a href="hero">Início</a></li>
+            <li><a href="products">Produtos</a></li>
+            <li><a href="about">Sobre</a></li>
+            <li><a href="contact">Contato</a></li>
+            <li><a href="#" class="action_btn">Começar</a></li>
+    </div>
+    
+</header>
+
+
+
+<!-- div pra caixa de login, input de usuário e senha e pro titulo "Login" -->
+<body>
+  <div class="form-caixa">
+    <p class="titulo">Login</p>
+    
+  
+    <form class="form" action="/login" method="post">
+      <div class="input-caixausuario">
+        <label for="username">Usuário</label>
+        <input type="text" name="username" id="username" placeholder="">
+      </div>
+
+
+      <div class="input-caixausuario">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="">
+        
+        
+        <div class="esqueciasenha">
+          <a rel="noopener noreferrer" href="esqueciasenha.html">Esqueceu a senha?</a>
+        </div>
+      </div>
+      
+<!-- botão de entrar -->      
+      <button type="submit" class="entrar1">Entrar</button>
+    </form>
+    
+<!-- div texto e linha -->    
+    <div class="contasocial">
+      <div class="linha"></div>
+      <p class="mensagem">Entre com suas contas sociais</p>
+      <div class="linha"></div>
+    </div>
+
+
+<!-- div icones das redes sociais -->
+    <div class="icones-sociais">
+      <button aria-label="Log in with Google" class="icone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+          <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+        </svg>
+      </button>
+      <button aria-label="Log in with Twitter" class="icone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+          <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
+        </svg>
+      </button>
+    </div>
+
+<!-- div para cadastro -->
+    <p class="semconta">Não tem uma conta?
+      <a href="cadastro.html">Cadastre-se agora</a>
+    </p>
+
+
+
+
+
+  </div>
+</body>
+</html>

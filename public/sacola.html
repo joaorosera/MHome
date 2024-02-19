@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha sacola</title>
+    <link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+    <link rel="stylesheet" href="../assets/style-sacola.css">
+</head>
+<header>
+  <!--Barra de navegação-->
+  <div class="navbar">
+      <div class="logoimagem"> 
+        <img src="https://i.pinimg.com/originals/8b/5c/e9/8b5ce93cf536a710ccec51ef0bdf46e9.png" alt="Logo MHome" width="25%" height="25%">
+      </div>
+      <!--Links da barra de navegação-->
+      <ul class="links">
+          <li><a class="links1" a href="index.html">Início</a></li>
+          <li><a class="links1" a href="produtos.html">Produtos</a></li>
+          <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+          <li><a class="links1" a href="contato.html">Contato</a></li>
+      </ul>
+
+      <details class="dropdown">
+        <summary role="button">
+          <a class="button">☰</a>
+        </summary>
+        <ul>
+          <li><a href="minhaconta.html">Minha conta</a></li>
+          <li><a href="meuspedidos.html">Pedidos</a></li>
+          <li><a href="sacola.html">Sacola</a></li>
+          <li><a href="index.html">Sair</a></li>
+      </ul>
+    </details>
+    
+      <!-- <a href="cadastro.html" class="action_btn">Começar</a>
+      <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i> -->
+      </div>
+  </div>
+  <!--Links menu suspenso-->
+  <div class="dropdown_menu">
+      <li><a href="hero">Início</a></li>
+          <li><a href="products">Produtos</a></li>
+          <li><a href="about">Sobre</a></li>
+          <li><a href="contact">Contato</a></li>
+          <li><a href="#" class="action_btn">Começar</a></li>
+  </div>
+  
+</header>
+
+<body>
+
+    <div class="titulo">RESUMO DA VIAGEM</div>
+
+    <!--Quadro para resumo da viagem-->
+    <div class="box">
+        <div class="resumo">
+          <!--Descrição da viagem-->
+            <div class="descricao">
+                <dl>
+                    <dd>Mercedes Sprinter </dd>
+
+                    <dd> Rio de Janeiro - São Paulo</dd>
+
+                    <dd> 28/06/2023 - 18/07/2023 </dd>
+
+                    <dd><b>Embarque:</b> Aeroporto Galeão</dd>
+
+                    <dd><b>Desembarque:</b> Aeroporto Galeão</dd>
+
+                </dl>
+            </div>
+
+         <!--Valor e taxa do pedido-->
+            <div class="todosvalores">
+                <div class="valor">
+                    <dl>
+                        <dd><b>R$2.299,00</b></dd>
+
+                        <dd>Taxas e Impostos:</dd>
+
+                        <dd>237,89</dd>
+                    </dl>
+                </div>
+                <!--Valor total do pedido-->
+                <div class="valortotal">
+                    <dd><b>R$2.536,09</b></dd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fotos carrossel de imagens-->
+    <div class="slideshow">
+        <img src="https://i.pinimg.com/originals/13/f3/99/13f3994f5c0acf2ffb3e2c83e67dbc2e.png" alt="Foto 1">
+        <img src="https://i.pinimg.com/originals/71/e2/5b/71e25b50c266752841027589e51917d4.webp" alt="Foto 2">
+        <img src="https://i.pinimg.com/originals/77/ee/f1/77eef105d8d88c0f79ad413ae73d90a0.jpg" alt="Foto 3">
+        <button class="prev">&#8249;</button>
+        <button class="next">&#8250;</button>
+      </div>
+      <!--Java Script Carrossel de imagens-->
+      <script>
+        const slideshow = document.querySelector('.slideshow');
+        const prevButton = slideshow.querySelector('.prev');
+        const nextButton = slideshow.querySelector('.next');
+        const images = slideshow.querySelectorAll('img');
+    
+        let currentImageIndex = 0;
+    
+        prevButton.addEventListener('click', () => {
+          images[currentImageIndex].style.transform = 'translateX(100%)';
+          currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+          images[currentImageIndex].style.transform = 'translateX(0)';
+        });
+    
+        nextButton.addEventListener('click', () => {
+          images[currentImageIndex].style.transform = 'translateX(-100%)';
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          images[currentImageIndex].style.transform = 'translateX(0)';
+        });
+      </script>
+
+      <div class="pagamento">
+        Formas de pagamento
+      </div>
+      <div class="divimagem">
+        <img class="imagem1" src="https://i.pinimg.com/originals/4f/f5/c3/4ff5c370dff04bc403f39ba38c2daa78.png">
+        <img class="imagem2" src="https://i.pinimg.com/originals/ea/a2/1b/eaa21ba146541c530c06d63446efe362.png">
+        <img class="imagem3" src="https://i.pinimg.com/originals/f1/d7/f3/f1d7f36245c41fc58a7b3f56cce9d549.png">
+        <img class="imagem4" src="https://i.pinimg.com/originals/4a/05/e3/4a05e39189ac3c99a9b89d26864813e7.png">
+        <img class="imagem5" src="https://i.pinimg.com/originals/4a/7e/d7/4a7ed7d15233fe70c333cd64fb8faa12.png">
+
+      </div>
+      <!--Botão direcionando para a página de pagamento-->
+      <div class="irpagamento">
+        <a href="pagamento.html">Ir para o pagamento</a>
+      </div>
+    </body>
+    </html>

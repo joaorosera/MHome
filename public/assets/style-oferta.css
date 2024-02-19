@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #e5e6e7;
+}
+
+/*Lista*/
+li {
+list-style: none;
+}
+
+/*Ancora de links*/
+a {
+text-decoration: none;
+color: #fff;
+font-size: 1rem;
+}
+
+/*Hover da ancora de links*/
+a:hover {
+color: lightskyblue;
+}
+/*Cabeçalho*/
+/* header {
+position: relative;
+padding: 0 2rem;
+} */
+
+/*Barra de navegação*/
+.navbar {
+width: 100%;
+height: 60px;
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/*Barra de navegação e imagem da logo*/
+.navbar .logoimagem{
+margin-top: 20px;
+}
+
+/*Barra de navegação e logo*/
+.navbar .logo a {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+/*Links da barra de navegação*/
+.navbar .links {
+display: flex;
+gap: 1rem;
+/* box-shadow: 0 0 10px green, 0 0 10px blue; */
+align-items: center;
+
+/*Links da barra de navegação*/
+}
+.navbar .links1 {
+display: flex;
+/* gap: 2rem; */
+box-shadow: 0 0 5px rgb(0, 0, 0);
+border-radius: 15px;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: black;
+font-family: 'Poppins', sans-serif;
+}
+
+/*Botão de alternância da barra de navegação*/
+.navbar .toggle_btn {
+color: #fff;
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
+}
+
+/*Botão de ação da barra de navegação*/
+/* .action_btn {
+background-color: lightskyblue;
+color: black;
+padding: 0.5rem 1rem;
+border: none;
+outline: none;
+border-radius: 20px;
+font-size: 2.5vh;
+font-weight: bold;
+cursor: pointer;
+transition: scale 0.2 ease;
+margin-left: 10px;
+} */
+
+/*Hover do botão de ação*/
+.action_btn:hover {
+scale: 1.05;
+color: #fff;
+}
+
+/*Botão de ação ativo*/
+.action_btn:active {
+scale: 0.95;
+}
+
+/*Menu suspenso*/
+.dropdown_menu {
+display: none;
+position: absolute;
+right: 2rem;
+top: 60px;
+height: 0;
+width: 300px;
+background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(15px);
+border-radius: 10px;
+overflow: hidden;
+transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*Menu suspenso aberto*/
+.dropdown_menu.open{
+height: 240px;
+}
+
+/*Lista do menu suspenso*/
+.dropdown_menu li {
+padding: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/*Menu suspenso com o botão de ação*/
+.dropdown_menu .action_btn {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+        .pai {
+
+            width: 100%;
+            height: 83vh;
+            background-color: #e5e6e7;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            font-family: 'Poppins', sans-serif;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            display: flex;
+        }
+
+        /*Título "Selecione o melhor plano para você!"*/
+        .titulo {
+            font-size: 21px;
+            font-family: 'Poppins', sans-serif;
+            margin: 0 0 0 45px;
+            color: #110B52;
+            width: 100%;
+            height: 8%;
+
+
+        }
+        /*Div descrição Van e Ofertas*/
+        .principal {
+            display: flex;
+            margin-left: 4vw;
+            margin-bottom: 2vh;
+            border: solid 1px #241B8D;
+            padding: 10px;
+            border-radius: 10px;
+            /* border: solid; */
+            height: 58vh;
+            width: 120vh;
+        }
+
+        /*Div descrição Van*/
+        .principal2 {
+            width: 39%;
+        }
+
+        /*Título "Mercedes Sprinter"*/
+        .sprinter {
+            text-align: center;
+            font-size: 20px;
+            width: 70%;
+            height: 30px;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 5vh;
+
+
+        }
+        /*Foto Mercedes Sprinter*/
+        .divfoto {
+            margin-left: 50px;
+            width: 70%;
+            height: 200px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+
+        }
+
+        .foto {
+            /* height: 300px; */
+            width: 33vh;;
+            text-align: center;
+        }
+
+
+        /*Descrição sobre a Van*/
+        .desc {
+            display: flex;
+            height: 125px;
+            width: 55px;
+
+        }
+
+        
+        .descricao2 {
+            margin-left: 40px;
+        }
+
+        /*Aviso sobre reservas*/
+        .descricao3 {
+            margin-left: 45px;
+            text-align: center;
+            width: 65%;
+            font-size: 12px;
+        }
+
+        /*Div Ofertas*/
+
+        .ofertas {
+            display: block;
+        }
+
+        /*Div oferta econômica*/
+        .oferta1 {
+            padding: 1.5vh;
+            width: 67vh;
+            border: solid 1px #241B8D;
+            height: 180px;
+            border-radius: 10px;
+
+        }
+
+        .divoferta {
+            display: flex;
+            width: 77vh;
+
+
+        }
+        /*Valor oferta econômica*/
+        .valor {
+            margin-left: 5px;
+            margin-top: 3vh;
+            font-size: 20px;
+            color: #241B8D;
+        }
+        /*Descrição oferta econômica*/
+        .descrofertas {
+            font-size: 15px;
+            margin-left: 20px;
+            width: 60%;
+            height: 40%;
+
+        }
+
+        /*Div Melhor oferta*/
+        .oferta2 {
+            display: relative;
+            padding: 1.5vh;
+            width: 67vh;
+            border: solid  1px #241B8D;
+            border-radius: 10px;
+            height: 170px;
+        }
+
+        .divoferta2 {
+            display: flex;
+            width: 550px;
+            height: 115px;
+        }
+
+        /*Valor melhor oferta*/
+        .valor2 {
+            margin-left: 8px;
+            margin-top: 3vh;
+            font-size: 20px;
+            color: #241B8D;
+        }
+        /*Descrição da melhor oferta*/
+        .descofertas2 {
+            font-size: 15px;
+            /* margin-left: 20px; */
+            /* width: 200px; */
+            height: 100px;
+            width: 60%;
+        }
+        /*Botão de reserva*/
+        .reservar {
+            display: block;
+            width: 150px;
+            height: 30px;
+            margin-top: -3vh;
+            background-color:#244229;
+            /* margin-right: 100px; */
+            padding-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+
+        .reservar a{
+            color: white;
+        }
+
+        
+        .res {
+            position: relative;
+            top: 7px;
+        }
+
+        .ghost {
+            height: 10px;
+            border: 1px solid transparent;
+            display: block;
+            padding: 10px;
+        }
+
+        /*Div quadro de resumo*/
+        .divresumo{
+        width: 60vh;
+        }
+        .resumo{
+        width: 55vh;
+        background-color: #EFF0F2;
+        margin-left:12vh;
+        margin-top: 10vh;
+        border: solid 1px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        }
+
+        /*Div data e botão de editar*/
+        .dataeditar{
+            display: flex;
+            margin-left: 2vh;
+            width: 50vh;
+        }
+        .dataeditar2{
+            display: flex;
+            margin-left: 2vh;
+        }
+
+        
+         /* .divresumodareserva{
+           
+            background-color:#A6A6A6;
+            color: #291BC4;
+            border-radius: 2px;
+            height: 6vh;
+            width: 55vh;
+        } */
+        /*Título resumo da reserva*/
+        .resumodareserva{
+            height: 6vh;
+            text-align: center;
+            font-size: 3vh;
+            background-color: gray;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding-top: 10px;
+
+        }
+        /*Título "retirada"*/
+        .retirada{
+          color:#291BC4;
+          margin-left: 2vh;
+        }
+        /*Título "devolução"*/
+        .Devolução{
+            color:#291BC4;
+            margin-left: 2vh;
+        }
+
+        /*Botão editar*/
+        .editar1{
+            color:#291BC4;
+            margin-left: 4vh;
+        }
+        .editar2{
+            color:#291BC4;
+            margin-left: 4vh;
+        }
+        
+        .editar1 a{
+            color: #291BC4;
+        }
+
+
+
+        /* .linha {
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 600px;
+            margin-left: 50px;
+        }
+
+        .rodape {
+            width: 100%;
+            height: 2vh;
+            background-color: #110B52
+        } */
+
+        /* .editar{
+            display: flex;
+        }
+
+         */
+:root {
+    --button-background: #e5e6e7;
+    --button-color: rgb(0, 0, 0);
+    --dropdown-highlight: dodgerblue;
+    --dropdown-width: 160px;
+    --dropdown-background: white;
+    --dropdown-color: black;
+  }
+  
+  
+  
+  /* Botão */
+  a.button {
+    /* Quadro */
+    display: inline-block;
+    padding: 20px 28px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: flex;
+    /* gap: 2rem; */
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding-bottom: 4.5px;
+    padding-top: 4.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    /* Estilo do botão*/
+    border: none;
+    background: var(--button-background);
+    color: var(--button-color);
+    font-size: 2.7vh;
+    cursor: pointer;
+    margin-left: 2vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  a.button:active {
+    filter: brightness(75%);
+  }
+  
+  /* Estilo de menu suspenso */
+  .dropdown {
+    position: relative;
+    padding: 0;
+    margin-right: 1em;
+    
+    border: none;
+  }
+  
+  .dropdown summary {
+    list-style: none;
+    list-style-type: none;
+  }
+  
+  .dropdown > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .dropdown summary:focus {
+    outline: none;
+  }
+  
+  .dropdown summary:focus a.button {
+    border: 2px solid white;
+  }
+  
+  .dropdown summary:focus {
+    outline: none;
+  }
+  
+  .dropdown ul {
+    position: absolute;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+    width: var(--dropdown-width);
+    left: 50%;
+    margin-left: calc((var(--dropdown-width) / 2)  * -1);
+    box-sizing: border-box;
+    z-index: 2;
+    
+    background: var(--dropdown-background);
+    border-radius: 6px;
+    list-style: none;
+  }
+  
+  .dropdown ul li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown ul li a:link, .dropdown ul li a:visited {
+    display: inline-block;
+    padding: 10px 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dropdown-color);
+    text-decoration: none;
+  }
+  
+  .dropdown ul li a:hover {
+    background-color: var(--dropdown-highlight);
+    color: var(--dropdown-background);
+  }
+  
+  /* ícone menu suspenso*/
+  .dropdown ul::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--dropdown-background) transparent;
+  }
+  
+  
+/*Fecha o menu suspenso com clicks externos*/
+  .dropdown > summary::before {
+    display: none;
+  }
+  
+  .dropdown[open] > summary::before {
+      content: ' ';
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+  }

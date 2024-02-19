@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus pedidos</title>
+    <link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/style-meuspedidos.css">
+</head>
+<body>
+    <header>
+        <!--Barra de navegação-->
+        <div class="navbar">
+            <div class="logoimagem"> 
+              <img src="https://i.pinimg.com/originals/8b/5c/e9/8b5ce93cf536a710ccec51ef0bdf46e9.png" alt="Logo MHome" width="25%" height="25%">
+            </div>
+            <!--Links da barra de navegação-->
+            <ul class="links">
+                <li><a class="links1" a href="index.html">Início</a></li>
+                <li><a class="links1" a href="produtos.html">Produtos</a></li>
+                <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+                <li><a class="links1" a href="contato.html">Contato</a></li>
+            </ul>
+    
+            <details class="dropdown">
+              <summary role="button">
+                <a class="button">☰</a>
+              </summary>
+              <ul>
+                <li><a href="minhaconta.html">Minha conta</a></li>
+                <li><a href="meuspedidos.html">Pedidos</a></li>
+                <li><a href="sacola.html">Sacola</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+          </details>
+          
+            <!-- <a href="cadastro.html" class="action_btn">Começar</a> -->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!--Links menu suspenso-->
+        <div class="dropdown_menu">
+            <li><a href="hero">Início</a></li>
+                <li><a href="products">Produtos</a></li>
+                <li><a href="about">Sobre</a></li>
+                <li><a href="contact">Contato</a></li>
+                <li><a href="#" class="action_btn">Começar</a></li>
+        </div>
+        
+    </header>
+
+
+    <!--Botãos barra de status do pedido-->
+    <div class="conteudo">
+        <div class="barra">
+            <div class="todos">Todos</div>
+            <div class="apagar">A pagar</div>
+            <div class="finalizado">Finalizado</div>
+            <hr>
+        </div>
+
+    
+    <!--ABA TODOS OS PEDIDOS-->
+        <div class="p_todos mostrar">
+
+            <!--pedido 1-->
+            <div class="pedido1">
+
+
+            
+                <div class="nomevan"><b>Mercedes Sprinter</b></div>
+                <div class="rotaevalor">
+                    <div class="divsprinter">
+                        <img class="fotos" src="https://i.pinimg.com/originals/f7/25/34/f7253483a57617a074a3662cb70e2c45.png">
+                    </div>
+                    <div class="rota">
+                        <p><b>SANTOS - SP → SÃO PAULO - SP </b> </p>
+                        <p2>28/06/2023 - 30/06/2023</p2>
+                    </div>
+                    <div class="valor"> <b>R$ 2.299,99</b>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pedido 2-->
+            <div class="pedido2">
+
+                <div class="nomevan2"><b>Renault Master</b></div>
+                <div class="rotaevalor2">
+                    <div class="divrenault">
+                        <img class="fotos2" src="https://i.pinimg.com/originals/31/15/5f/31155f0ef9608436afd0f2789eb0146c.png">
+                    </div>
+                    <div class="rota2">
+                        <p><b>FORTALEZA - CE → ARACATI - CE </b> </p>
+                        <p2>11/08/2022 - 16/08/2022</p2>
+                    </div>
+                    <div class="valor2"> <b>R$ 4.599,99</b>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A PAGAR -->
+        <div class="p_apagar">
+            <!--pedido 1-->
+            <div class="pedido1">
+                <div class="nomepagamento">
+                    <div class="nomevan"><b>Mercedes Sprinter</b></div>
+                    <div class="statuspagamento"><B>PAGAMENTO PENDENTE</B></div>
+                </div>
+                <div class="rotaevalor">
+                    <div class="divsprinter">
+                        <img class="fotos" src="https://i.pinimg.com/originals/f7/25/34/f7253483a57617a074a3662cb70e2c45.png">
+                    </div>
+                    <div class="rota">
+                        <p><b>SANTOS - SP → SÃO PAULO - SP </b> </p>
+                        <p2>28/06/2023 - 30/06/2023</p2>
+                    </div>
+                    <div class="valor"> <b>R$ 2.299,99</b>
+
+                    </div>
+                </div>
+                <!-- <hr> -->
+            </div>
+
+            <!--pedido 2-->
+            <div class="pedido2">
+                <div class="nomepagamento2">
+                    <div class="nomevan2"><b>Renault Master</b></div>
+                    <div class="statuspagamento2"><B>PAGAMENTO FINALIZADO</B></div>
+                </div>
+                <div class="rotaevalor2">
+                    <div class="divrenault">
+                        <img class="fotos2" src="https://i.pinimg.com/originals/31/15/5f/31155f0ef9608436afd0f2789eb0146c.png">
+                    </div>
+                    <div class="rota2">
+                        <p><b>FORTALEZA - CE → ARACATI - CE </b> </p>
+                        <p2>11/08/2022 - 16/08/2022</p2>
+                    </div>
+                    <div class="valor2"> <b>R$ 4.599,99</b>
+
+                    </div>
+                </div>
+                <!-- <hr> -->
+            </div>
+        </div>
+        <!-- FINALIZADO -->
+        <div class="p_finalizado">
+            <!--pedido 1-->
+            <div class="pedido1">
+
+                <div class="nomevan"><b>Mercedes Sprinter</b></div>
+                <div class="rotaevalor">
+                    <!--Foto van-->
+                    <div class="divsprinter">
+                        <img class="fotos" src="https://i.pinimg.com/originals/f7/25/34/f7253483a57617a074a3662cb70e2c45.png">
+                    </div>
+                    <!--rota -->
+                    <div class="rota">
+                        <p><b>SANTOS - SP → SÃO PAULO - SP </b> </p>
+                        <p2>28/06/2023 - 30/06/2023</p2>
+                    </div>
+                    <!--Valor do pedido-->
+                    <div class="valor"> <b>R$ 2.299,99</b></div>
+
+                    <!--Botão direcionando para pag de avalie-nos-->
+                    <div class="avaliar">
+                        <a href="avalie-nos.html">AVALIAR</a>
+                    </div>
+                </div>
+                <!-- <hr> -->
+            </div>
+            <!--pedido 2 -->
+            <div class="pedido2">
+
+                <div class="nomevan2"><b>Renault Master</b></div>
+                <div class="rotaevalor2">
+                     <!--Foto van-->
+                    <div class="divrenault">
+                        <img class="fotos2" src="https://i.pinimg.com/originals/31/15/5f/31155f0ef9608436afd0f2789eb0146c.png">
+                    </div>
+                      <!--rota -->
+                    <div class="rota2">
+                        <p><b>FORTALEZA - CE → ARACATI - CE </b> </p>
+                        <p2>11/08/2022 - 16/08/2022</p2>
+                    </div>
+                      <!--Valor do pedido-->
+                    <div class="valor2"> <b>R$ 4.599,99</b></div>
+                      <!--Botão direcionando para pag de avalie-nos-->
+                    <div class="avaliar2">
+                        <a href="avalie-nos.html">AVALIAR</a>
+                    </div>
+                </div>
+                <!-- <hr> -->
+            </div>
+        </div>
+    </div>
+
+    <!--Java Script para mostrar abas separadamente-->
+
+    <script>
+        const conteudos = document.querySelector(".conteudo")
+
+        conteudos.addEventListener('click', event => {
+            
+            const elemento = event.target.classList[0]
+
+            let todos = document.querySelector(".p_todos")
+            let apagar = document.querySelector(".p_apagar")
+            let finalizado = document.querySelector(".p_finalizado")
+
+
+            if(elemento == "todos"){
+                todos.classList.add("mostrar")
+                apagar.classList.remove("mostrar")
+                finalizado.classList.remove("mostrar")
+            }
+            else if(elemento =="apagar"){
+                apagar.classList.add("mostrar")
+                todos.classList.remove("mostrar")
+                finalizado.classList.remove("mostrar")
+            }
+            else if (elemento == "finalizado") {
+                finalizado.classList.add("mostrar")
+                todos.classList.remove("mostrar")
+                apagar.classList.remove("mostrar")
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

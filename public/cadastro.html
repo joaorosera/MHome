@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title> 
+    <link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/style-cadastro.css">
+   </head>
+<body>
+  <header>
+    <!--Barra de navegação-->
+    <div class="navbar">
+        <div class="logoimagem"> 
+          <img src="https://i.pinimg.com/originals/8b/5c/e9/8b5ce93cf536a710ccec51ef0bdf46e9.png" alt="Logo MHome" width="25%" height="25%">
+        </div>
+        <!--Links da barra de navegação-->
+        <ul class="links">
+            <li><a class="links1" a href="index.html">Início</a></li>
+            <li><a class="links1" a href="produtos.html">Produtos</a></li>
+            <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+            <li><a class="links1" a href="contato.html">Contato</a></li>
+        </ul>
+
+        <details class="dropdown">
+          <summary role="button">
+            <a class="button">☰</a>
+          </summary>
+          <ul>
+            <li><a href="minhaconta.html">Minha conta</a></li>
+            <li><a href="meuspedidos.html">Pedidos</a></li>
+            <li><a href="sacola.html">Sacola</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+      </details>
+      
+        <!-- <a href="cadastro.html" class="action_btn">Começar</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i> -->
+        </div>
+    </div>
+    <!--Links menu suspenso-->
+    <div class="dropdown_menu">
+        <li><a href="hero">Início</a></li>
+            <li><a href="products">Produtos</a></li>
+            <li><a href="about">Sobre</a></li>
+            <li><a href="contact">Contato</a></li>
+            <li><a href="#" class="action_btn">Começar</a></li>
+    </div>
+    
+</header>
+
+
+<!--Wrapper é a div pai que emgloba os elementos do formulário-->
+  <div class="wrapper">
+    <h2>Cadastro</h2>
+    <form action="/cadastro" method="post">
+      <div class="input-box">
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+      </div>
+      <div class="input-box">
+        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+      </div>
+      <div class="input-box">
+        <input type="text" name="email" placeholder="Digite seu e-mail" required>
+      </div>
+      <div class="input-box">
+        <input type="text" name="cpf" placeholder="Digite seu CPF" required>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Digite sua senha" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Confirme sua senha" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>Eu aceito todos os termos & condições</h3>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Registre-se agora">
+      </div>
+      <div class="text">
+        <h3>Já tem uma conta? <a href="login.html">Faça Login</a></h3>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="shortcut icon"
+    href="https://i.pinimg.com/originals/a6/9c/5e/a69c5e9be2372e2d3a3131c9d8d4955b.png"
+    type="imagem/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/style-produtos.css">
+
+</head>
+<body>
+    <header>
+        <!--Barra de navegação-->
+        <div class="navbar">
+            <div class="logoimagem"> 
+              <img src="https://i.pinimg.com/originals/8b/5c/e9/8b5ce93cf536a710ccec51ef0bdf46e9.png" alt="Logo MHome" width="25%" height="25%">
+            </div>
+            <!--Links da barra de navegação-->
+            <ul class="links">
+                <li><a class="links1" a href="index.html">Início</a></li>
+                <li><a class="links1" a href="produtos.html">Produtos</a></li>
+                <li><a class="links1" a href="sobrenos.html">Sobre</a></li>
+                <li><a class="links1" a href="contato.html">Contato</a></li>
+            </ul>
+    
+            <details class="dropdown">
+              <summary role="button">
+                <a class="button">☰</a>
+              </summary>
+              <ul>
+                <li><a href="minhaconta.html">Minha conta</a></li>
+                <li><a href="meuspedidos.html">Pedidos</a></li>
+                <li><a href="sacola.html">Sacola</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+          </details>
+          
+            <!-- <a href="cadastro.html" class="action_btn">Começar</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i> -->
+
+            </div>
+            
+        </div>
+        <!--Links menu suspenso-->
+        <div class="dropdown_menu">
+            <li><a href="hero">Início</a></li>
+                <li><a href="products">Produtos</a></li>
+                <li><a href="about">Sobre</a></li>
+                <li><a href="contact">Contato</a></li>
+                <li><a href="#" class="action_btn">Começar</a></li>
+        </div>
+        
+    </header>
+
+    
+
+<!-- fundo para as caixas de busca, caixa de texto pro local de partida, caixa de texto pro local de retorno e caixa pra selecionar o horário -->
+    <div class="form-container">
+        <input class="input" name="text" placeholder="Local de partida" type="search">
+
+        <input class="textbox-n" placeholder="Data de partida" type="text" onfocus="(this.type='date')"  onblur="(this.type='text')"  />
+        <input placeholder="Data de retorno" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+
+        <input type="time" id="appt" name="appt" class="horabox-n">
+
+       <!-- <button>
+        <span>Buscar</span>
+      </button> -->
+
+
+<!-- botão para buscar -->
+<div class="irpagamento">
+    <a>Buscar</a>
+  </div>
+
+    
+     
+
+
+      </div>
+ 
+
+
+<!-- vitrine de produtos -->
+  <ul class="produto-list">
+      <li class="produto-item">
+              <figure class="produto-info">
+                  <div class="produto-info-img">
+                      <img src="https://i.pinimg.com/originals/f7/25/34/f7253483a57617a074a3662cb70e2c45.png" alt="mercedes sprinter" >
+                  </div>
+                  <figcaption class="produto-info-descricao">
+
+                      <!-- nome do produto -->
+                      <h2 class="title" >Mercedes Sprinter</h2>
+
+                      <!-- descrição dos produtos -->
+                      <p class="descricao" >Clique para mais detalhes</p>
+
+                      <!-- estrelas pra avaliação dos produtos -->
+                      <ul class="avaliacao">
+                            
+                            <a href="avaliação.html" div class="descricaoavaliacao" >Avaliações </div></a>
+                          
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
+                          </li>
+
+                      <!-- quantidade de avaliações ja feitas -->    
+                          <li class="qtd-votos">
+                              </span>(50)</span>
+                          </li>
+                      </ul>
+                  </figcaption>
+
+                      <!-- valor do produto -->
+                          <div class="valor-box">
+                           <div class="valor" >
+                          <div>
+                              <ins class="valorreserva">R$3.599,00</ins>
+                          </div>
+
+                          </div>
+
+                      <!-- botão pra reserva -->
+                      <a href="oferta.html" class="btn btn-comprar">Reservar agora <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                  </div>
+              </figure>
+          </a>
+      </li>
+
+
+      <!-- vitrine de produtos -->
+      <li class="produto-item">
+              <figure class="produto-info">
+                  <div class="produto-info-img">
+                      <img src="https://i.pinimg.com/originals/bd/b8/a7/bdb8a712c97477c1a839eac4dff0ec6e.png" alt="mercedes sprinter">
+                  </div>
+                  <figcaption class="produto-info-descricao">
+
+                    <!-- nome do produto -->
+                      <h2 class="title">Mercedes Sprinter</h2>
+
+                      <!-- descrição dos produtos -->
+                      <p class="descricao">Clique para mais detalhes</p>
+
+                      <!-- estrelas pra avaliação dos produtos -->
+                      <ul class="avaliacao">
+
+                        <a href="avaliação.html" div class="descricaoavaliacao" >Avaliações </div></a>
+
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
+                          </li>
+
+                          <!-- quantidade de avaliações ja feitas --> 
+                          <li class="qtd-votos">
+                              </span>(57)</span>
+                          </li>
+                      </ul>
+                  </figcaption>
+
+                  <!-- valor do produto -->
+                  <div class="valor-box">
+                      <div class="valor">
+                          <div>
+                              <ins class="valorreserva">R$2.899,00</ins>
+                          </div>
+                      </div>
+
+                  <!-- botão pra reserva -->    
+                      <a href="oferta.html" class="btn btn-comprar">Reservar agora <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                  </div>
+              </figure>
+          </a>
+      </li>
+
+
+      <!-- vitrine de produtos -->
+      <li class="produto-item">
+              <figure class="produto-info">
+                  <div class="produto-info-img">
+                      <img src="https://i.pinimg.com/originals/31/15/5f/31155f0ef9608436afd0f2789eb0146c.png" alt="renault master">
+                  </div>
+                  <figcaption class="produto-info-descricao">
+
+                    <!-- nome do produto -->
+                      <h2 class="title">Renault Master</h2>
+
+                    <!-- descrição dos produtos -->
+                      <p class="descricao">Clique para mais detalhes</p>
+
+                    <!-- estrelas pra avaliação dos produtos -->  
+                      <ul class="avaliacao">
+
+                        <a href="avaliação.html" div class="descricaoavaliacao" >Avaliações </div></a>
+
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/2kW5mnM/star.png">
+                          </li>
+                          <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
+                          </li>
+
+                    <!-- quantidade de avaliações ja feitas -->       
+                          <li class="qtd-votos">
+                              </span>(36)</span>
+                          </li>
+                      </ul>
+                  </figcaption>
+                  <div class="valor-box">
+                      <div class="valor">
+                          <div>
+
+                    <!-- valor do produto -->        
+                              <ins class="valorreserva">R$2.890,00</ins>
+                          </div>
+                      </div>   
+                      
+                    <!-- botão pra reserva -->  
+                      <a href="oferta.html" class="btn btn-comprar">Reservar agora <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                  </div>
+              </figure>
+          </a>
+      </li>
+     
+                
+  
+  </ul>
+  
+  <div style="margin: 50px 0; display: flex; align-items: center; justify-content: center; width: 100%">
+  
+  </div>
+
+
+
+</body>
+</html>
